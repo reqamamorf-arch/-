@@ -17,7 +17,7 @@ async def text_to_speech(text: str) -> bytes:
     }
     payload = {
         "text": text,
-        "voiceId": "Ashley",           # ✅ camelCase — так в официальной доке
+        "voiceId": "default-vcvv4v2mkc9qpzshu9csrq__dzheremi_1",           # ✅ camelCase — так в официальной доке
         "modelId": "inworld-tts-1.5-max",  # ✅ camelCase
     }
     async with httpx.AsyncClient(timeout=30) as client:
