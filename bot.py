@@ -104,7 +104,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         temp = float(data[len("temp_"):])
         get_settings(user_id)["temperature"] = temp
         await query.edit_message_text(f"✅ Температура: {temp}", reply_markup=main_menu())
-[08.04.2026 16:10] Ktoya: async def text_to_speech(text: str, voice_id: str, temperature: float) -> bytes:
+async def text_to_speech(text: str, voice_id: str, temperature: float) -> bytes:
     headers = {
         "Authorization": f"Basic {INWORLD_API_KEY}",
         "Content-Type": "application/json",
