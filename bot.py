@@ -1,4 +1,3 @@
-[08.04.2026 16:10] Ktoya: `python
 import os
 import base64
 import io
